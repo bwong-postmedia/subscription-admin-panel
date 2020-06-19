@@ -9,9 +9,22 @@ $ cd mysite
 $ python3 -m venv env
 ```
 
-2. Activate virtual environment and install django
+2. Activate virtual environment and install packages
 
 ```bash
 $ source env/bin/activate
 $ pip install -r requirements.txt
+$ ./manage.py collectstatic
+```
+
+3. Create a super user
+
+```bash
+$ ./manage.py createsuperuser
+```
+
+4. Start the server
+
+```bash
+$ ./manage.py runserver
 ```
